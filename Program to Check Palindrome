@@ -1,0 +1,21 @@
+import java.util.*;
+public class Loop{
+    public static void main(String args[]) {
+        int n, d, rev = 0, Num;
+        Scanner Sc = new Scanner(System.in);
+        System.out.println("enetr no");
+        n = Sc.nextInt();
+        Num = n;
+        while (n > 0) {
+            d = n % 10;
+            rev = rev * 10 + d;
+            n = n / 10;
+        }
+
+        if (rev == Num) {
+            System.out.println("palindrome number ");
+        } else {
+            System.out.println("not palindrome");
+        }
+    }
+}
