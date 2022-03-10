@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Loop {
+    public static void main(String[] args) {
+        int N, d, sum = 0;
+        Scanner Sc = new Scanner(System.in);
+        System.out.println("enter the no.");
+        N = Sc.nextInt();
+        while (N != 0) {
+            d = N % 10;
+            sum = sum + d;
+            N = N / 10;
+        }
+        System.out.println("Sum of Digits: " + sum);
+
+    }
+}
